@@ -1,0 +1,20 @@
+server:
+   port: 8889
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    nonSecurePort: 8889
+
+management:
+  security:
+     enabled: false
+
+#Si queremos autenticación básica
+#security:
+#  user:
+#     name: immconfig
+#     password: password

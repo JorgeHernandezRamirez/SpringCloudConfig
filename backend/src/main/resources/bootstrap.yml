@@ -1,0 +1,17 @@
+spring:
+  application:
+     name: backend
+  cloud:
+     config:
+       #Si queremos realizar el descubrimiento de servicios
+       discovery:
+         service-id: CONFIGURATION
+         enabled: true
+       fail-fast: true
+       #Si queremos utilizar url directa
+       #uri:  http://localhost:8889/
+       #Si es servidor requiere autenticación
+       #username: immconfig
+       #password: password
+
+
